@@ -8,9 +8,5 @@ services:
     command: --label-enable --interval 30
 
   express-app:
-    build: .
+    image: ranilar/ci-cd-exercise:latest
     container_name: express-app
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true"
-    ports:
-      - "8080:8080"
