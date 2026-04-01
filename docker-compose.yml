@@ -10,3 +10,5 @@ services:
   express-app:
     image: ranilar/ci-cd-exercise:latest
     container_name: express-app
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
